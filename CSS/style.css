@@ -1,0 +1,161 @@
+:root {
+  --color1: #ff204e;
+  --color2: #a0153e;
+  --color3: #750e21;
+  --color4: #eee4b1;
+  --color5: #be3144;
+  --black: black;
+  --red: red;
+  --white: white;
+}
+
+body,
+h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing {
+  background-image: url("website_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--color5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color5);
+  min-width: 120px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  padding: 1em;
+}
+
+#logo {
+  flex: 3;
+  font-size: 1.25em;
+  min-width: 260px;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  flex: 1;
+}
+
+nav a:hover {
+  color: var(--color4);
+}
+
+header h2 i,
+nav a i {
+  margin-right: 0.5em;
+}
+
+.maintext {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  padding: 2em;
+}
+
+.tagline1 {
+  color: var(--white);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.tagline2 {
+  color: var(--color4);
+}
+
+.maintext div {
+  margin-top: 0.75em;
+}
+.maintext button {
+  width: 20vw;
+  margin-top: 2em;
+  border-radius: 10px;
+  padding: 0.7em;
+  background-color: var(--color4);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background: linear-gradient(to right, rgb(221, 78, 78), rgb(220, 70, 70));
+  color: var(--color3);
+}
+
+#menuheading,
+#locheading {
+  background: linear-gradient(to right, rgb(221, 78, 78), rgb(220, 70, 70));
+  font-size: 2.5em;
+  color: var(--color4);
+  display: flex;
+  justify-content: center;
+}
+
+.menu th {
+  color: var(--color3);
+  font-size: 1.8em;
+}
+
+table {
+  width: 100%;
+  padding: 1em;
+}
+
+.menu tr {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8em;
+}
+
+.menu td:nth-child(1) {
+  flex: 1;
+  justify-self: left;
+}
+.menu td:nth-child(2) {
+  justify-self: right;
+}
+
+.maincourse {
+  grid-row: span 2;
+}
+
+.locations {
+  background: linear-gradient(to right, rgb(221, 78, 78), rgb(220, 70, 70));
+  color: var(--color3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locations h2 {
+  color: var(--color3);
+  margin-bottom: 0.8em;
+}
+
+.locations div {
+  flex: 1;
+  padding: 1em;
+  min-width: 220px;
+}
+
+footer {
+  background-color: rgb(206, 44, 44);
+  color: var(--color4);
+  padding: 0.25em 1em;
+}
